@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  # Data Science Docker Container
+  data-sci:
+    build: ./data-sci
+    ports:
+      - 8888:8888
+    volumes:
+      - "/Users/myles/Notebooks:/home/jovyan"
+    env_file: ./data-sci/.env
+
