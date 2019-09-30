@@ -8,6 +8,5 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - "/Users/myles/Notebooks:/home/jovyan"
-    env_file: ./data-sci/.env
+      - "/Users/myles/Notebooks:/home/jovyan"  # TODO: This should be a env var.
 
