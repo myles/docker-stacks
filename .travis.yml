@@ -6,3 +6,11 @@ notifications:
 
 services:
   - docker
+
+before_script:
+  - docker-compose -f docker-compose.yml up --build -d
+  - docker ps -a
+  - sleep 30
+
+after_script:
+  - docker-compose -f docker-compose.travis.yml down

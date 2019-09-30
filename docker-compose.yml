@@ -5,8 +5,9 @@ services:
   # Data Science Docker Container
   data-sci:
     build: ./data-sci
+    
     ports:
-      - 8888:8888
-    volumes:
-      - "/Users/myles/Notebooks:/home/jovyan"  # TODO: This should be a env var.
+      - "${DATA_SCI_PORT}:8888"
 
+    volumes:
+      - "${DATA_SCI_PATH}:/home/jovyan"
