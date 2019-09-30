@@ -1,6 +1,6 @@
 # Docker Stacks
 
--    [data-sci](./data-sci/README.md)
+-    [data-sci](./data-sci/)
 
 ## Usage
 
