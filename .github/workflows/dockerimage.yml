@@ -10,5 +10,12 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
+    
     - name: Build the Docker image
       run: docker build . --file ./data-sci/Dockerfile --tag data-sci:$(date +%s)
+      
+    - name: lint
+      uses: luke142367/Docker-Lint-Action@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TARGET: Dockerfile
