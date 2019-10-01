@@ -5,6 +5,7 @@ services:
   # Data Science Docker Container
   data-sci:
     build: ./data-sci
+    image: myles/data-sci:latest
     
     ports:
       - "${DATA_SCI_PORT}:8888"
