@@ -13,4 +13,4 @@ before_script:
   - sleep 30
 
 after_script:
-  - docker-compose -f docker-compose.travis.yml down
+  - docker-compose -f docker-compose.yml down
