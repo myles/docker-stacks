@@ -16,5 +16,4 @@ after_script:
   - docker-compose -f docker-compose.yml down
 
 env:
-  - DATA_SCI_PORT=8888
-  - DATA_SCI_PATH=$HOME
+  - DATA_SCI_PORT=8888 DATA_SCI_PATH=/home/travis
