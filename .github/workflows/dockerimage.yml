@@ -1,0 +1,18 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: Build Data-Sci Docker image
+      run: docker build . --file data-sci/Dockerfile --tag data-sci:$(date +%s)
+      env:
+        DATA_SCI_PATH: .
+        DATA_SCI_PORT: 9000
