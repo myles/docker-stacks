@@ -1,4 +1,6 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/datascience-notebook:1386e2046833
+
+LABEL maintainer="Myles Braithwaite <me@mylesbraithwaite.org>"
 
 USER root
 
