@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       
-    - uses: cdssnc/docker-lint-github-action
+    - uses: cds-snc/github-actions/docker-lint
